@@ -43,60 +43,75 @@ a:hover{
     }
     /*my work css*/
     .my-work{
-position: absolute;
+        display: grid;
+        gap: 20px;
+color:#fff;
 width:1130px;
 height:auto;
 align-items: center;
-left:10%;
+margin-left:10%;
 justify-content: space-between;
     }
-    .my-work h3{
-        color:#fff;
-        text-align:center;
-        font-weight: bolder;
-        font-size:50px;
-        text-transform: capitalize;
+   .flex-box{
+    display:flex;
+    position: relative;
+    top:70px;
+    
+   }
+   .flex-box > *{
+    gap:20px;
+   }
+   .my-work h3{
+    position: relative;
+    top:50px;
+    color:#fff;
+    text-align:center;
+    font-weight: bolder;
+    font-size:50px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.icons{
+    display:flex;
+    width: 250px;
+    height: 100px;
+    padding:5px;
+    justify-content: space-between;
+}
+.icons img{
+    width: 50px;
+    height:50px;
+    align-items: right;
+    padding-left:10px;
+    margin:0;
+}
+.icons span{
+    text-transform: capitalize;
+
+}
+.text-wrapper{
+    
+    width:70% ;
+    background: #312D2D;
+    border-radius: 10px;
+}
+.text-wrapper ul{
+    width:400px auto;
+    height: auto;
+  
+    
+}
+.text-wrapper ul li{
+    list-style-type: none;
+    padding:5px;
+    text-align:justify;
     }
-    .icons{
-        width: 200px;
-        height: 100px;
-        padding:5px;
-        justify-content: space-between;
-    }
-    .icons img{
-        width: 100px;
-        fill:#fff;
-    }
-    .icons span{
-        width: fit-content;
-        position: absolute;
-        color: #fff;
-        font-weight: bold;
-        text-align:center;
-        margin-left:10px;
-        top:45%;
-    }
-    .text-wrapper{
-        position: absolute;
-        height: 100px;
-        width:500px auto;
-        background: #fff;
-        align-items: right;
-        margin-left: 30%;
-        top:80px;
+    .line-break{
+        position: relative;
+        width: 1130px;
+        height: 5px;
+        background:#03CEFB;
+        margin:20px;
+        left:-10px;
         border-radius: 10px;
-        }
-        .text-wrapper p{
-            padding:10px;
-            text-align:justify;
-            text-decoration: dotted;
-        }
-        .line-break{
-            position: relative;
-            width: 1130px;
-            height: 5px;
-            background:#03CEFB;
-            margin:20px;
-            left:-10px;
-            border-radius: 10px;
-        }
+    }
