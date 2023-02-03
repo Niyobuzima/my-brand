@@ -55,6 +55,10 @@ a:hover{
         text-transform:capitalize;
         font-size:30px;
     }
+    .fm h2 span{
+        color: #03CEFB;
+
+    }
     .fm form{
         position:relative;
     }
@@ -73,10 +77,21 @@ a:hover{
     width:50px;
 }
 .icons-cont{
-    display: flex;
-    width: 500px;
-    height: 500px;
-    background: #191919;
-    position:relative;
+    position:absolute;
+    align-content: right;
+    display: grid;
     margin-top:20%;
+    left:70%;
+    gap:20px;
+}
+.icons-cont h2{
+    color: #fff;
+    text-transform: capitalize;
+}
+.icons-cont h2 span{
+    color:#03CEFB;
+}
+.fa-brands{
+    color:#fff;
+    font-size:3rem;
 }
