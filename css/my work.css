@@ -101,3 +101,38 @@ box-shadow: 0 0 30px rgba(0,0,0,0,18);
     font-weight: 400;
 
    }
+   /*media queries*/
+@media (max-width:35em){
+    .primary-navigation{
+        position:fixed;
+        z-index: 1000;
+        inset:0 0 0 20%;
+        flex-direction: column;
+        background:hsl(0 0% 100% / 0.1);
+        padding:min(30vh, 10rem) 2rem;
+        backdrop-filter: blur(1rem);
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    nav ul li{
+        display: block;
+    }
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index:9999;
+        background-color: transparent;
+        background: url(../images/icons/1298745_google_brand_branding_logo_network_icon.svg);
+        background-repeat: no-repeat;
+        width: 0.5rem;
+        aspect-ratio: 1;
+        top:2rem;
+        margin-left:100px;
+        
+    }
+    
+  
+}

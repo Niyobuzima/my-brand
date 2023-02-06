@@ -9,6 +9,7 @@
 }
 body{
     background-color: black;
+    overflow-x: hidden ;
 }
 .hero{
 height:100vh;
@@ -19,16 +20,19 @@ background-position:center;
 }
 nav{
     display: flex;
+    position: fixed;
+    width: max(100%);
+    z-index: 9999;
+    background:hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
     align-items: center;
     justify-content: space-between;
-    padding-top:45px ;
+    padding-top: 45px;
     padding-left: 8%;
-    padding-right: 8%;
-   
-    
+    padding-right: 8%;   
 }
 .logo{
-    color:white;
+color:white;
 font-weight: bold;
 letter-spacing: 1px;
 font-size:35px;
@@ -56,6 +60,9 @@ a:hover{
         color:#fff;
         width:50px;
         height: 50px;
+    }
+    .mobile-nav-toggle{
+        display: none;
     }
     
 .content{
@@ -151,7 +158,7 @@ border: none;
 .about{
     position: relative;
     color:#fff;
-    top:90vh;
+    top:100vh;
 }
 
 .image img{
@@ -199,7 +206,7 @@ margin-bottom: 20px;
 /*skills css */
 .skills{
     position:relative;
-    top:90%;
+    top:100%;
 }
 .skills_section{
     width: 100%;
@@ -355,10 +362,9 @@ margin-bottom: 20px;
         width: 60%;
     }
 }
-
 /*media queries*/
 @media (max-width:35em){
-    nav ul{
+    .primary-navigation{
         position:fixed;
         z-index: 1000;
         inset:0 0 0 20%;
@@ -366,18 +372,26 @@ margin-bottom: 20px;
         background:hsl(0 0% 100% / 0.1);
         padding:min(30vh, 10rem) 2rem;
         backdrop-filter: blur(1rem);
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
     }
     nav ul li{
         display: block;
     }
     .mobile-nav-toggle{
+        display: block;
         position: absolute;
         z-index:9999;
-        background: url(../images/icons/634-6342297_menu-bar-icon-white-clipart-png-download-3.png);
-        width: 2rem;
+        background-color: transparent;
+        background: url(../images/icons/1298745_google_brand_branding_logo_network_icon.svg);
+        background-repeat: no-repeat;
+        width: 0.5rem;
         aspect-ratio: 1;
         top:2rem;
-        right:2rem;
+        margin-left:100px;
+        
     }
-  
-}
+    }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
     <script src="https://kit.fontawesome.com/60174faef7.js" crossorigin="anonymous"></script>
+    <script src="nav.js" defer></script>
         <title>my brand</title>
     </head>
     <body>
@@ -16,8 +17,10 @@
             <h2 class="logo">
                 N>F>T
             </h2>
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">menu</span></button>
-            <ul id="primary-navigation" data-visible="false">
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only"><i class="fa-solid fa-bars-sort"></i></span>
+            </button>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation">
                 <li><a href="index.html">home</a></li>
                 <li><a href="my work.html">my work</a></li>
                 <li><a href="#skills">skills</a></li>
