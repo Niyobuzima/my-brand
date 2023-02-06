@@ -41,6 +41,9 @@ nav ul li:hover{
 a:hover{
     color:#03CEFB;
     }
+    .mobile-nav-toggle{
+        display: none;
+    }
     /*my work css*/
     .my-work{
 margin-top:30px;
@@ -132,7 +135,5 @@ box-shadow: 0 0 30px rgba(0,0,0,0,18);
         top:2rem;
         margin-left:100px;
         
-    }
-    
-  
+    }  
 }

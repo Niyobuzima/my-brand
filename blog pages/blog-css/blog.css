@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'paytone one', sans-serif;
+}
+body{
+    height: max(100vh auto);
+}
+.container{
+    
+}
+.main-content{
+    display:flex;
+gap:20px;
+}
+.wrapper{
+    width: 800px;
+    height: 700px;
+
+}
+.wrapper img{
+    width:700px ;
+    height: 600px;
+}
+.main{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    padding: 5px;
+    grid-gap:10px;
+}
+.wrapper1{
+    width: 300px;
+    height: 300px;
+}
+.wrapper1 img{
+    width:250px;
+    height: 250px;
+}
