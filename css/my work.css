@@ -43,75 +43,56 @@ a:hover{
     }
     /*my work css*/
     .my-work{
-        display: grid;
-        gap: 20px;
-color:#fff;
-width:1130px;
-height:auto;
-align-items: center;
-margin-left:10%;
-justify-content: space-between;
+margin-top:30px;
+background:#191919;
+height:200vh auto;
+display:grid;
+place-items: center center;
     }
-   .flex-box{
-    display:flex;
-    position: relative;
-    top:70px;
-    
+    .my-work h3{
+        color:#fff;
+        text-transform: uppercase;
+        font-size:25px;
+        margin-top:10px;
+    }
+   .cards{
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+padding: 20px;
+grid-gap:40px;
    }
-   .flex-box > *{
-    gap:20px;
-   }
-   .my-work h3{
-    position: relative;
-    top:50px;
-    color:#fff;
-    text-align:center;
-    font-weight: bolder;
-    font-size:50px;
-    text-transform: capitalize;
-    margin-bottom: 5px;
-}
-.icons{
-    display:flex;
-    width: 250px;
-    height: 100px;
-    padding:5px;
-    justify-content: space-between;
-}
-.icons img{
-    width: 50px;
-    height:50px;
-    align-items: right;
-    padding-left:10px;
-    margin:0;
-}
-.icons span{
-    text-transform: capitalize;
+   .card{
+background-color: #1c1b29;
+border-radius: 20px;
+box-shadow: 0 0 30px rgba(0,0,0,0,18);
 
-}
-.text-wrapper{
-    
-    width:70% ;
-    background: #312D2D;
-    border-radius: 10px;
-}
-.text-wrapper ul{
-    width:400px auto;
-    height: auto;
-  
-    
-}
-.text-wrapper ul li{
+   }
+   .containers{
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);
+   }
+   img{
+    width:100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+
+   }
+   .details{
+    padding:20px 10px;
+
+   }
+   .details h4{
+    color:#fff;
+    font-weight: 600;
+    font-size:18px;
+    margin:10px 0 15px 0;
+    text-transform: capitalize;
+   }
+   .details li{
     list-style-type: none;
-    padding:5px;
-    text-align:justify;
-    }
-    .line-break{
-        position: relative;
-        width: 1130px;
-        height: 5px;
-        background:#03CEFB;
-        margin:20px;
-        left:-10px;
-        border-radius: 10px;
-    }
+    color:#a0a0a0;
+    font-size:15px;
+    line-height: 25px;
+    font-weight: 400;
+
+   }
