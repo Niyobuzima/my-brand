@@ -80,7 +80,7 @@ h1{
     text-align: center;
     margin-top:20px;
 }
-span{
+h1 span{
     color:#03CEFB ;
 }
 button{
@@ -354,4 +354,30 @@ margin-bottom: 20px;
     }100%{
         width: 60%;
     }
+}
+
+/*media queries*/
+@media (max-width:35em){
+    nav ul{
+        position:fixed;
+        z-index: 1000;
+        inset:0 0 0 20%;
+        flex-direction: column;
+        background:hsl(0 0% 100% / 0.1);
+        padding:min(30vh, 10rem) 2rem;
+        backdrop-filter: blur(1rem);
+    }
+    nav ul li{
+        display: block;
+    }
+    .mobile-nav-toggle{
+        position: absolute;
+        z-index:9999;
+        background: url(../images/icons/634-6342297_menu-bar-icon-white-clipart-png-download-3.png);
+        width: 2rem;
+        aspect-ratio: 1;
+        top:2rem;
+        right:2rem;
+    }
+  
 }
