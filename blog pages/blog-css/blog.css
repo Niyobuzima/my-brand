@@ -19,6 +19,11 @@ nav{
     background:hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(2rem);
 }
+.fa-solid{
+  color:#fff;
+  width:50px;
+  height: 50px;
+}
 .logo{
 color:white;
 font-weight: bold;
@@ -183,6 +188,36 @@ a:hover{
   
 /*media query*/
 @media (max-width: 50rem) {
+  .primary-navigation{
+    position:fixed;
+    z-index: 1000;
+    inset:0 0 0 20%;
+    flex-direction: column;
+    background:hsl(0 0% 100% / 0.1);
+    padding:min(30vh, 10rem) 2rem;
+    backdrop-filter: blur(1rem);
+    transform: translateX(100%);
+    transition: transform 350ms ease-in;
+  }
+  .primary-navigation[data-visible="true"]{
+    transform: translateX(0%);
+  }
+  nav ul li{
+    display: block;
+  }
+  .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    z-index:9999;
+    background-color: transparent;
+    background: url(../images/icons/1298745_google_brand_branding_logo_network_icon.svg);
+    background-repeat: no-repeat;
+    width: 0.5rem;
+    aspect-ratio: 1;
+    top:2rem;
+    margin-left:100px;
+    
+  }
     .main-content {
       width: 100%;
     }
