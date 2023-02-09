@@ -4,7 +4,7 @@
     font-family: 'paytone one',sans-serif;
 }
 body{
-    background: #1b2430;
+  background: #1A1919;
     }
 
 nav{
@@ -199,3 +199,24 @@ footer > p{
     text-transform: capitalize;
     color: rgb(145, 146, 146);
 }
+/*media query*/
+@media only screen and (max-width: 50rem) {
+  .container {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-content: center;
+  }
+  .container h1 {
+  width: 100%;
+  }
+  .wrapper {
+  width: 100%;
+  }
+  .info {
+  grid-template-columns: 1fr;
+  }
+  #comments {
+  width: 100%;
+  }
+  }
+  

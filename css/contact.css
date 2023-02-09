@@ -77,7 +77,12 @@ a:hover{
     border-radius:10px;
 }
 .btn{
-    width:50px;
+    width: 200px;
+}
+.btn input:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
 }
 .icons-cont{
     position:absolute;
