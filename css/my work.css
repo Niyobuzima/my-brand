@@ -109,6 +109,47 @@ box-shadow: 0 0 30px rgba(0,0,0,0,18);
     font-weight: 400;
 
    }
+   .portofolio_buttons{
+    display: flex;
+    gap: 20px;
+    place-content: center;
+    margin-bottom: 10px;
+   }
+   .linkedin{
+    width:200px;
+    height: 30px;
+    border: 2px solid #fff;
+    background:#a69191;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+   }
+   .linkedin a{
+    color:#000;
+    text-decoration: none;
+    text-transform: capitalize;
+   }
+   .fa-file{
+    width:auto;
+    color:#000;
+   } 
+   .linkedin:hover,.linkedin a:hover{
+    transform: scale(1.1);
+    transition:.3s;
+   }
+
+   footer {
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.18);
+  }
+  
+  footer > p {
+    text-align: center;
+    text-transform: capitalize;
+    color: #919296;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  }
    /*media queries*/
 @media (max-width:35em){
     .primary-navigation{
