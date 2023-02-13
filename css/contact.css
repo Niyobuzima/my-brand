@@ -139,4 +139,23 @@ a:hover{
         margin-left:100px;
         
     }
+    #contactfm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .icons-cont{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        top:100%;
+        left:15%;
+    }
+    .icons-cont h2{
+        display: none;
+    }
+    .fa-brands{
+        font-size: 40px;
+        padding: 10px;
+    }
     }
