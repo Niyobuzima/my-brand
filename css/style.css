@@ -18,62 +18,69 @@ background-image: url(../images/_EN_5311.jpg);
 background-size:cover;
 background-position:center;
 }
-.nav{
-    display:flex;
+.nav {
+    display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding-top: 20px;
     width: 100%;
-}  
-.logo{
+  }
+  
+  .logo {
     text-decoration: none;
-    text-transform: uppercase;
-    font-size:30px;
-    color: #a69191;
-}
-.logo:hover{
-    transform: scale(1.1);
-    transition: .3s;
-    color:#03CEFB;
-}
-.hamburger {
+    font-size: 1.8rem;
+    color: rgb(145, 145, 167);
+    padding-left: 20px;
+  }
+  
+  .hamburger {
     padding-right: 20px;
     cursor: pointer;
     position: absolute;
-    left:75em;
+    left:70%;
+
   }
   
-  .hamburger .line { 
-    display: none;
+  .hamburger .line {
+    display: block;
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: white;
+    background-color:white;
   }
+  
   .nav__link {
+    position: absolute;
+    width: 100%;
     top: 5rem;
-    left: 18px;
-  }
-  .nav__link a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #fff;
-    text-transform: capitalize;
+    right:3rem;
+    background-color: #121111;
     text-align: center;
-    padding: 5px;
-    border-radius: 10px;
+    overflow: hidden;
+    z-index: 999;
   }
+  
+  .nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color:white;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  
   .nav__link a:hover {
-    transform: scale(1.1);
-    transition: .3s;
-    background: #919296;
-}
-@media screen and (min-width: 600px) {
-    .hero{
-        display: none;
-    }
+    background-color: lightcoral;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @media screen and (min-width: 600px) {
     .nav__link {
       display: block;
-      position: fixed;
+      position: static;
       width: auto;
       margin-right: 20px;
       background: none;
@@ -84,11 +91,8 @@ background-position:center;
       padding: 15px 20px;
     }
   
-    .hamburger .line {
-      display: block;
-    }
-    .hide{
-        display: none;
+    .hamburger {
+      display: none;
     }
   }
   
