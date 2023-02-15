@@ -63,3 +63,18 @@ main a{
     display: flex;
     place-content: center;
 }
+@media only screen and (max-width:50em){
+    body{
+        width: 100%;
+    }
+    .container{
+        width: 400px;
+        margin-left: 15%;
+    }
+    .queries{
+        width: 100%;
+    }
+    .queries img{
+        display: none;
+    }
+}

@@ -74,16 +74,16 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
   }
-@media (max-width: 50rem) {
-    .blogs {
-    width: 100%;
-    margin-left: 0;
+  @media (max-width: 50rem) {
+    .container {
+        width: 100%;
+        margin: 10px;
     }
-    .posts {
-    width: 90%;
-    margin: 0 auto;
+    
+    .wrapper {
+        width: 100%;
     }
-    }
+}
     
     @media (max-width: 35rem) {
     .blogs {
