@@ -169,8 +169,10 @@ body{
   
   .wrapper p {
     text-align: justify;
+    text-transform: capitalize;
     color: #fff;
     padding: 5px;
+    margin:6px;
   }
   
   .wrapper a {
