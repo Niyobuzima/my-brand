@@ -9,7 +9,7 @@ function signIn(){
 
   // Parameters to pass to OAuth 2.0 endpoint.
   var params = {'client_id': '61084999943-utq5dufrajnjath1gm5vd3v6ce3u5eit.apps.googleusercontent.com',
-                'redirect_uri': 'http://127.0.0.1:5500/Admin%20panel/admin%20panel.html',
+                'redirect_uri': 'https://niyobuzima.netlify.app/admin%20panel/admin%20panel',
                 'response_type': 'token',
                 'scope':'https://www.googleapis.com/auth/userinfo.profile',
                 'include_granted_scopes': 'true',
