@@ -140,13 +140,13 @@ body{
     margin: auto;
   }
 /*search bar*/  
-  .main-content {
-    width: max(1130px, 360px);
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  }
-  
+.main-content {
+  width: max(1130px, 360px);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
   .wrapper {
     height: 300px;
     margin-bottom: 8px;

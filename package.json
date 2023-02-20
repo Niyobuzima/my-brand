@@ -1,0 +1,23 @@
+{
+  "name": "my-brand",
+  "version": "1.0.0",
+  "description": "capstone project andela",
+  "main": "auth.js",
+  "scripts": {
+    "start": "json-server --watch ./database/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niyobuzima/my-brand.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niyobuzima/my-brand/issues"
+  },
+  "homepage": "https://github.com/Niyobuzima/my-brand#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
