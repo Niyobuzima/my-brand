@@ -12,20 +12,14 @@
     <div class="fm">
         <h2>admin <span>article</span> page</h2>
         <a href="admin panel.html">back to home</a>
-        <form >
-            <input type="text" placeholder="Article head" required id="header">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required id="body">
-            </textarea>
-            <div class="container">
-            <div class="btn">
-                <input type="file" accept="image/*" name="image" value="Upload Image" id="image" onchange="previewFile()">
-                <img src="" id="img_preview" alt="img-preview" height="200px">
-                <input type="submit" value="Submit" onclick="saveView()">
-            </div>
-        </div>
+        <form>
+          <input type="text" name="title" required placeholder="Blog title">
+          <textarea name="body" required placeholder="Blog body"></textarea>
+          <input type="file" id="image" name="image">
+          <button>Create</button>
         </form>
-    </div>
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <script src="../blog pages/javascript/create.js"></script>
+        <img id="preview" src="" alt="Preview" />
+<script src="../blog pages/javascript/create.js"></script>
+    
 </body>
 </html>

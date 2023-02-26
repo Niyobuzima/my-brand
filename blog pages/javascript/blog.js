@@ -9,7 +9,7 @@ const renderPosts = async () => {
     wrapper.forEach( posts => {
         template += `
         <div class="wrapper">
-                    <img src="${posts.image}" alt="article1">
+                    <img src="data:image/png;base64,${posts.image}" alt="article1">
                     <p>
                         ${posts.body.slice(0,50)} 
                     </p>
