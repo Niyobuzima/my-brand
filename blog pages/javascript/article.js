@@ -12,7 +12,7 @@ const renderDetails = async () => {
         <p><time datetime="feb 07 2023 18:02">feb 07 2023 18:02</time> Niyobuzima Theophile</p>
     </div>
     <div class="wrapper">
-    <img src="${posts.image}" alt="article">Lorem ipsum dolor sit 
+    <img src="data:image/png;base64,${posts.image}" alt="article">Lorem ipsum dolor sit 
     <p>${posts.body}</p>
     
     </div>
