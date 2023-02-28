@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'paytone one', sans-serif;
+}
+body{
+    background: #1A1919;
+    height: max(100vh auto);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: rgb(145, 145, 167);
+  padding-left: 20px;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+  position: absolute;
+  left:78%;
+
+}
+
+.hamburger .line {
+  display: block;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color:white;
+}
+
+.nav__link {
+  position: absolute;
+  width: 100%;
+  top: 5rem;
+  right:3rem;
+  background-color: #121111;
+  text-align: center;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  color:white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.nav__link a:hover {
+  background-color: lightcoral;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+.fa-solid{
+  color:#fff;
+  width:50px;
+  height: 50px;
+}
+/*navbar*/
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    background-color: #394452;
+    border-radius: 25px;
+    padding: 0 20px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 5px 20px 5px;
+  }
+  
+  .search-container form {
+    display: flex;
+    width: 90%;
+  }
+  
+  .search-container input[type="text"] {
+    width: 80%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    padding-left: 20px;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .search-container button {
+    width: 20%;
+    height: 50px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0 25px 25px 0;
+  }
+  
+  .search-container button:hover {
+    background-color: #2980b9;
+  }
+  
+  .search-container i {
+    margin: auto;
+  }
+/*search bar*/  
+.main-content {
+  width: max(1130px, 360px);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+  .wrapper {
+    height: 300px;
+    margin-bottom: 8px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.18);
+    padding: 5px;
+    transition: 0.3s;
+  }
+  
+  .wrapper:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.18);
+    transition: 0.3s;
+  }
+  
+  .wrapper img {
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .wrapper p {
+    text-align: justify;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 5px;
+    margin:6px;
+  }
+  
+  .wrapper a {
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.3s;
+  }
+  
+  .wrapper a:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  .info {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, #B8B0B0, #A05511);
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .info a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .info a:hover {
+    color: #A05511;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  footer {
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.18);
+  }
+  
+  footer > p {
+    text-align: center;
+    text-transform: capitalize;
+    color: #919296;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  }
+  
+/*media query*/
+@media (max-width: 50rem) {
+  .main-content {
+      width: 100%;
+    }
+  
+    .wrapper {
+      height: auto;
+      margin-bottom: 8px;
+      box-shadow: none;
+      padding: 5px;
+    }
+  
+    .wrapper img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

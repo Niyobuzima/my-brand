@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
-    <script src="https://kit.fontawesome.com/60174faef7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/60174faef7.js" crossorigin="anonymous" defer></script>
+    <script src="nav.js" defer></script>
     <title>CONTACT ME</title>
 </head>
 <body>
-    <div class="navbar">
-    <nav>
-        <h2 class="logo">
-            N>F>T
-        </h2>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="my work.html">my work</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="my work.html">blog</a></li>
-            <li><a href="#abouttxt">about</a></li>
-            <li><a href="contact.html">contact us</a></li>
-        </ul>
-    </nav>
-</div>
+    <header>
+        <nav class="nav">
+          <a href="index.html" class="logo">N>F>T</a>
+  
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+  
+          <div class="nav__link hide">
+            <a href="index.html">home</a>
+            <a href="blog pages/blog.html">blog</a>
+            <a href="my work.html">my-work</a>
+            <a href="../my-brand/#skills">skills</a>
+            <a href="../my-brand/#abouttxt">about</a>
+            <a href="contact.html">contact</a>
+           <a href="login form.html"><i class="fa-solid fa-user"></i></a> 
+          </div>
+        </nav>
+      </header>
 <section id="contactfm">
     
     <div class="fm">
@@ -36,15 +43,17 @@
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required>
 
             </textarea>
-            <input type="submit" name="" value="submit" class="btn">
+            <div class="btn"><input type="submit" name="" value="submit">
+            </div>
+            
         </form>
     </div>
     <div class="icons-cont">
     <h2>follow us on <span>social medias</span></h2>
+   <a href="https://twitter.com/Theophi84091585"> <i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.instagram.com/niyobuzimat"><i class="fa-brands fa-instagram"></i></a>
     <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-google-plus"></i>
+    <a href="mailto:theophileniyobuzima@gmail.com"><i class="fa-brands fa-google-plus"></i></a>
     </div>
 </section>
 </body>

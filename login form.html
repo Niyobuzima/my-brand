@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
-    <script src="https://kit.fontawesome.com/60174faef7.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Paytone+One"
+    />
+    <script
+      src="https://kit.fontawesome.com/60174faef7.js"
+      crossorigin="anonymous"
+    ></script>
+   
     <title>LOGIN</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i> back to home</a>
+      <a href="index.html"
+        ><i class="fa-sharp fa-solid fa-arrow-left"></i> back to home</a
+      >
     </header>
     <div class="form">
-        <div class="box">
-            <h2>sign in</h2>
+      <div class="box">
+        <h2>sign in</h2>
         <div class="form-wrapper">
-            <div class="icons icon1">
-            <a href="#">sign in with google</a>
-            <img src="images/icons/1298745_google_brand_branding_logo_network_icon.svg" alt="google">
-        </div>
+          <div class="icons icon1">
+            <a onclick="signIn()" href="#">sign in with google</a>
+            <img
+              src="images/icons/1298745_google_brand_branding_logo_network_icon.svg"
+              alt="google"
+            />
+          </div>
         </div>
         <div class="form-wrapper">
-            <div class="icons">
+          <div class="icons">
             <a href="#">sign in with facebook</a>
-           <img src="images/icons/5279111_network_fb_social media_facebook_facebook logo_icon.svg" alt="facebook">
-        </div>
+            <img
+              src="images/icons/5279111_network_fb_social media_facebook_facebook logo_icon.svg"
+              alt="facebook"
+            />
+          </div>
         </div>
         <div class="form-wrapper">
-            <div class="icons icon3">
+          <div class="icons icon3">
             <a href="#">sign in with microsoft</a>
-            <img src="images/icons/4373121_logo_logos_microsoft_icon.svg" alt="microsoft">
-        </div>
+            <img
+              src="images/icons/4373121_logo_logos_microsoft_icon.svg"
+              alt="microsoft"
+            />
+          </div>
         </div>
         <div class="wrapper">
-        <p>Don't have account?</p>
-        <div class="btn">
-            <a href="sign up.html">sign up</a>
+          <p>Don't have account?</p>
+          <a href="sign up.html">sign up</a>
         </div>
+      </div>
     </div>
-    </div>
-    </div>
-</body>
+     <script src="auth.js"></script>
+  </body>
 </html>

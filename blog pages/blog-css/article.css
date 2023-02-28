@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'paytone one',sans-serif;
+}
+body{
+  background: #1A1919;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      width: 100%;
+    }
+    
+    .logo {
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: rgb(145, 145, 167);
+      padding-left: 20px;
+    }
+    
+    .hamburger {
+      padding-right: 20px;
+      cursor: pointer;
+      position: absolute;
+      left:70%;
+  
+    }
+    
+    .hamburger .line {
+      display: block;
+      width: 40px;
+      height: 5px;
+      margin-bottom: 10px;
+      background-color:white;
+    }
+    
+    .nav__link {
+      position: absolute;
+      width: 100%;
+      top: 5rem;
+      right:3rem;
+      background-color: #121111;
+      text-align: center;
+      overflow: hidden;
+      z-index: 999;
+    }
+    
+    .nav__link a {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      color:white;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+    
+    .nav__link a:hover {
+      background-color: lightcoral;
+    }
+    
+    .hide {
+      display: none;
+    }
+    
+    @media screen and (min-width: 600px) {
+      .nav__link {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+      }
+    
+      .nav__link a {
+        display: inline-block;
+        padding: 15px 20px;
+      }
+    
+      .hamburger {
+        display: none;
+      }
+    }
+  
+      /*navbar*/
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px 1fr));
+  gap:10px;
+  justify-content: center;
+}
+.container h1{
+    width: 800px;
+    color:rgb(228, 217, 217);
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.img-wrapper{
+    display: flex;
+    gap:10px;
+}
+.img-wrapper img{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+.img-wrapper > p{
+    text-transform: capitalize;
+    color: rgb(169, 159, 159);
+    font-size: 10px;
+}
+.wrapper{
+    width: 800px;
+    padding: 10px;
+}
+.wrapper img{
+    width: 100%;
+    border-radius: 10px;
+}
+.wrapper p{
+    color: rgb(169, 159, 159);
+    padding: 5px;
+}
+.info{
+    display: grid;
+    place-items: center;
+    background: rgb(184, 176, 176);
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.info a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(145, 85, 17);
+}
+.info a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+    transition:.3s;
+}
+/*like and share*/
+#like{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#like-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #like-button {
+    background-color: #965C25;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #like-count {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  #share-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #share-button {
+    background-color: #965C25;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+/*comment section*/
+#comments {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  #comments h2{
+    color: #ab9e9e;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: lightgray;
+    color: rgb(145, 85, 17);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #commentList {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  #commentList div {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+
+/*end of main*/
+footer{
+    margin-bottom:20px;
+}
+footer > p{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(145, 146, 146);
+}
+/*media query*/
+@media only screen and (max-width: 50rem) {
+  .container {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-content: center;
+  }
+  .container h1 {
+  width: 100%;
+  }
+  .wrapper {
+  width: 100%;
+  }
+  .info {
+  grid-template-columns: 1fr;
+  }
+  #comments {
+  width: 100%;
+  }
+  }
+  

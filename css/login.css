@@ -21,7 +21,7 @@ header a{
 }
 .form{
     position: relative;
-    width: 380px;
+    width: min(380px, 360px);
     height: 420px;
     background: #1c1c1c;
     border-radius: 8px;
@@ -75,7 +75,7 @@ header a{
 }
 .form-wrapper{
     text-align: center;
-    width:340px;
+    width:min(340px,320px);
     height: 30px;
     background:#a0a0a0;
     padding: 10px;
@@ -115,23 +115,15 @@ p{
     font-weight: 600px;
     font-size:16px;
     margin-left:8px;
+    margin-right: 8px;
 }
-.btn{
-    background:#03CEFB;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-    margin-left: 8px;
-    border-radius: 15px;
-    padding: 3px;
-    margin-bottom:-8px;
-}
-.btn a{
+
+.wrapper a{
     text-decoration: none;
     text-transform: capitalize;
-    color: #ffd;
+    color: #03CEFB;
 } 
-.btn:hover{
+.wrapper a:hover{
     transform: scale(1.1);
     transition:.3s;
 }

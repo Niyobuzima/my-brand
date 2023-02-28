@@ -6,30 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/my work.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/60174faef7.js" crossorigin="anonymous" defer></script>
+    <script src="nav.js" defer></script>
+    <title>MY_WORK</title>
 </head>
 <body>
     <header>
-        <nav>
-            <h2 class="logo">
-                N>F>T
-            </h2>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="my work.html">my work</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#abouttxt">about</a></li>
-                <li><a href="contact.html">contact us</a></li>
-            </ul>
+        <nav class="nav">
+          <a href="index.html" class="logo">N>F>T</a>
+  
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+  
+          <div class="nav__link hide">
+            <a href="index.html">home</a>
+            <a href="blog pages/blog.html">blog</a>
+            <a href="my work.html">my-work</a>
+            <a href="../#skills">skills</a>
+            <a href="../#abouttxt">about</a>
+            <a href="contact.html">contact</a>
+           <a href="login form.html"><i class="fa-solid fa-user"></i></a> 
+          </div>
         </nav>
-    </header>
+      </header>
     <main>
         <div class="my-work">
             
             <h3>my work</h3>
           <div class="cards">
-            <div class="card card1">
+            <div class="card">
                 <div class="containers">
                     <img src="images/andela-social-share-default.png" alt="andela">
                 </div>
@@ -84,9 +92,15 @@
        <!-- linkedin button and cv section-->
       <section class="portofolio_buttons">
         <div class="linkedin">
-        
+            <a href="#" download><i class="fa-solid fa-file"></i> download cv</a>
+        </div>
+        <div class="linkedin">
+            <a href="#" ><i class="fa-brands fa-github"></i> github</a>
         </div>
       </section>  
     </main>
+    <footer>
+        <p>crafted with &#128525 &copy 2023 Niyobuzima</p>
+    </footer>
 </body>
 </html>

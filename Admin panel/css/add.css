@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'paytone one',sans-serif;
+}
+body{
+    background: #191919;
+}
+#contactfm{
+    display: flex;
+}
+.fm{
+    margin-left:15%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap:6rem;
+}
+.fm h2{
+    position: relative;
+    margin-top:5%;
+    margin-left:-35%;
+    text-align:center;
+    color:#fff;
+    text-transform:capitalize;
+    font-size:30px;
+}
+.fm h2 span{
+    color: #03CEFB;
+
+}
+.fm form{
+    position:relative;
+}
+.fm form input, form textarea{
+width:60%;
+padding:17px;
+border:none;
+outline:none;
+background: #1b2430;
+color:#fff;;
+font-size:1.1rem;
+margin-bottom:0.7rem;
+border-radius:10px;
+}
+.fm a{
+    color:#fff;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+width: 300px;
+}
+.btn input:hover{
+cursor: pointer;
+transform: scale(1.1);
+transition: .3s;
+}
+.btn1{
+    float:right;
+    position: absolute;
+    top: 84%;
+    left:48%;
+}
